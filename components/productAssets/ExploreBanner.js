@@ -30,7 +30,7 @@ export default class ExploreBanner extends React.Component {
       return;
     }
     const dimensions = this.exploreContainer.current.getBoundingClientRect();
-    const x = window.matchMedia('(min-width: 768px)');
+    const x = window.matchMedia('(min-width: 70px)');
 
     if (x.matches) {
       if (dimensions.top - window.innerHeight < 0 && dimensions.bottom > 0) {
@@ -38,14 +38,14 @@ export default class ExploreBanner extends React.Component {
           (window.innerHeight - dimensions.top) / window.innerHeight - 1;
 
         this.image.current.style.transform = `translateY(${-scrolledRatio *
-          100}px)`;
+          300}px)`;
       }
     }
   }
 
   render() {
     return (
-      <div className="py-5 mb-5 explore-banner">
+      <div className="mb-5 explore-banner">
         <div className="bg-brand300 position-relative py-md-5">
           {/* Image Absolute */}
           <div className="position-md-absolute left-0 bottom-0 right-0">
@@ -66,20 +66,20 @@ export default class ExploreBanner extends React.Component {
           </div>
 
           {/* Content */}
-          <div ref={this.exploreContainer} className="custom-container py-md-5">
-            <div className="row py-5">
-              <div className="col-12 col-md-6 py-5">
+          <div ref={this.exploreContainer} className="custom-container md-5">
+            <div className="row pb-5">
+              <div className="col-12 col-md-6 pb-5">
                 <p
                   className="font-size-display3 font-weight-light mb-4"
                   style={{ maxWidth: '20rem' }}
                 >
-                  A new shopping experience
+                  Um novo conceito de uniformes
                 </p>
                 <div className="d-flex">
                   <Link href="/collection">
                     <a className="d-flex py-3 align-items-center font-color-black borderbottom border-color-black">
-                      <p className="mr-3">Explore products</p>
-                      <img src="/icon/arrow-long-right.svg" />
+                      <p className="mr-3">Explore categorias</p>
+                      {/* <img src="/icon/arrow-long-right.svg" /> */}
                     </a>
                   </Link>
                 </div>

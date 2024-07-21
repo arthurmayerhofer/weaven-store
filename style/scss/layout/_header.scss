@@ -36,9 +36,18 @@ header {
     }
   }
 
-  .logo {
-    width: auto;
-    height: 0.8rem;
+  .logo[src="/images/logo.png"] {
+    width: 30px; 
+    height: auto;
+    margin-right: 5px;
+  }
+  
+  .logo[src="/images/weaven.png"] {
+    width: 100px; 
+    height: auto;
+  }
+  .header.invert .logo[src="/images/weaven.png"] {
+    filter: invert(1) brightness(10) saturate(0%);
   }
 
   .cart-count {

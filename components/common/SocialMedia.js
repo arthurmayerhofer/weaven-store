@@ -3,23 +3,23 @@ import Link from 'next/link';
 
 const imagesInfo = [
   {
-    image: '/images/insta/1.png',
+    image: '/images/insta/i0.jpg',
     translateRatio: -50
   },
   {
-    image: '/images/insta/2.jpg',
+    image: '/images/insta/i1.jpg',
     translateRatio: 30
   },
   {
-    image: '/images/insta/3.jpg',
+    image: '/images/insta/i4.jpg',
     translateRatio: 0
   },
   {
-    image: '/images/insta/4.jpg',
+    image: '/images/insta/i2.jpg',
     translateRatio: -20
   },
   {
-    image: '/images/insta/5.jpg',
+    image: '/images/insta/i5.jpg',
     translateRatio: -80
   }
 ];
@@ -68,7 +68,7 @@ export default class SocialMedia extends React.Component {
 
   render() {
     return (
-      <footer className="pt-5">
+      <footer className='pt-5'>
         <div
           ref={this.followContainer}
           className="custom-container px-3 mb-5 footer-follow"
@@ -79,12 +79,12 @@ export default class SocialMedia extends React.Component {
                 className="font-size-display1 mb-3"
                 style={{ maxWidth: '26rem' }}
               >
-                Follow us on Instagram for more updates
+                Confira nosso Instagram
               </p>
               <div className="d-flex">
                 <Link href="/about">
                   <a className="d-flex py-3 align-items-center font-color-black borderbottom border-color-black">
-                    <p className="mr-3">Follow us</p>
+                    <p className="mr-3">Siga-nos</p>
                     <img src="/icon/arrow-long-right.svg" alt="Arrow icon"/>
                   </a>
                 </Link>
@@ -95,6 +95,7 @@ export default class SocialMedia extends React.Component {
             {imagesInfo.map((item, i) => (
               <div key={i} className="justify-content-sm-end flex-column follow-images">
                 <div
+                className='product-card '
                   ref={image => this.images.push(image)}
                   style={{
                     paddingBottom: '100%',

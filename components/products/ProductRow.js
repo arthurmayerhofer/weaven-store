@@ -8,7 +8,7 @@ class ProductRow extends Component {
     const reg = /(<([^>]+)>)/ig;
 
     return (
-      <div className="row mb-5">
+      <div className="row mb-0">
         {products.map((product) => (
           <div key={product.id} className="col-6 col-sm-6 col-lg-3">
             <ProductCard

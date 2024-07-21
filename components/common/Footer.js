@@ -1,13 +1,32 @@
 import React from 'react';
+import Link from 'next/link';
 
 const Footer = () => (
   <footer className="pt-5">
     <div className="custom-container mb-5 pb-5 pt-5">
+      
+      
       <div className="row">
         <div className="col-12 col-sm-6 col-md-4">
-          <p className="font-family-secondary font-size-display1 mb-4">
+        <div className="footer">
+      <Link href="/">
+        <a>
+            <img
+            src="/images/logo.png"
+            className="logo cursor-pointer"
+            alt="Logo"
+          />
+            <img
+            src="/images/weaven.png"
+            className="logo cursor-pointer"
+            alt="Logo"
+          />
+          </a>
+      </Link>
+      </div>
+          {/* <p className="font-family-secondary font-size-display1 mb-4">
             Commerce.js
-          </p>
+          </p> */}
           <div className="d-flex font-color-medium mb-5 pb-3 pb-md-0 mb-md-0">
             <div className="pr-5">
               <a
@@ -16,25 +35,31 @@ const Footer = () => (
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Documentation
+                Contato
               </a>
               <a
                 href="https://commercejs.com/features"
-                className="d-block font-color-medium"
+                className="mb-3 d-block font-color-medium"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Features
+                Sobre nós
               </a>
-            </div>
-            <div>
               <a
                 href="https://commercejs.com/about"
                 className="mb-3 d-block font-color-medium"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                About
+                Trocas e Devoluções
+              </a>
+              <a
+                href="https://commercejs.com/about"
+                className="mb-3 d-block font-color-medium"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Política de Privacidade
               </a>
               <a
                 href="http://slack.commercejs.com/"
@@ -42,27 +67,45 @@ const Footer = () => (
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Community
+                Termos de Serviço
               </a>
             </div>
+            {/* <div>
+              <a
+                href="https://commercejs.com/about"
+                className="mb-3 d-block font-color-medium"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Política de Privacidade
+              </a>
+              <a
+                href="http://slack.commercejs.com/"
+                className="d-block font-color-medium"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Termos de Serviço
+              </a>
+            </div> */}
           </div>
         </div>
         <div className="col-12 col-sm-6 col-md-4">
           <p className="font-family-secondary font-size-display1 mb-4">
-            Follow us
+              Rede Social
           </p>
           <div className="d-flex font-color-medium mb-5 pb-3 pb-md-0 mb-md-0">
             <div className="pr-5">
-              <a
+              {/* <a
                 href="https://twitter.com/commercejs"
                 className="mb-3 d-block font-color-medium"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Twitter
-              </a>
+              </a> */}
               <a
-                href="https://www.instagram.com/commerce.js/"
+                href="https://www.instagram.com/weaventextil/"
                 className="d-block font-color-medium"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -70,7 +113,7 @@ const Footer = () => (
                 Instagram
               </a>
             </div>
-            <div>
+            {/* <div>
               <a
                 href="https://angel.co/company/chec"
                 className="mb-3 d-block font-color-medium"
@@ -87,17 +130,17 @@ const Footer = () => (
               >
                 LinkedIn
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="col-12 col-md-4">
           <p className="font-family-secondary font-size-display1 mb-3">
-            Newsletter
+          Sua Dose de Novidades
           </p>
           <div className="position-relative">
             <input
               className="borderbottom border-color-gray400 h-48 w-100 px-3"
-              placeholder="email address"
+              placeholder="endereço de email"
             />
             <button className="bg-transparent position-absolute right-0 top-50 translateY--50 pr-2 h-48">
               <img src="/icon/arrow-long-right.svg" className="w-24" alt="Arrow icon"/>

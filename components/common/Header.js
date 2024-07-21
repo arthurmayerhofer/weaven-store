@@ -28,11 +28,11 @@ const mobileMenuLinks = [
     link: '/'
   },
   {
-    name: 'Shop',
+    name: 'Categorias',
     link: '/collection'
   },
   {
-    name: 'About',
+    name: 'Sobre',
     link: '/about'
   }
 ];
@@ -185,10 +185,13 @@ class Header extends Component {
         >
           <div className="d-none d-sm-flex">
             <Link href="/collection">
-              <a className="mr-4 font-color-black">Shop</a>
+              <a className="mr-4 font-color-black">Categorias</a>
             </Link>
-            <Link href="/about">
-              <a className="font-color-black">About</a>
+            {/* <Link href="/about">
+              <a className="font-color-black">Sobre</a>
+            </Link> */}
+            <Link href="/collection">
+              <a className="font-color-black">Sobre</a>
             </Link>
           </div>
           <div className="logo-container">
@@ -200,8 +203,18 @@ class Header extends Component {
             />
             <Link href="/">
               <a>
-                <img
+                {/* <img
                   src="/images/commerce.svg"
+                  className="logo cursor-pointer"
+                  alt="Logo"
+                /> */}
+                 <img
+                  src="/images/logo.png"
+                  className="logo cursor-pointer"
+                  alt="Logo"
+                />
+                 <img
+                  src="/images/weaven.png"
                   className="logo cursor-pointer"
                   alt="Logo"
                 />

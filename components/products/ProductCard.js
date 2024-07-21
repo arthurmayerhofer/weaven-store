@@ -4,9 +4,9 @@ import Link from 'next/link';
 export default function ProductCard({ permalink, image, name, description, price, soldOut}) {
   return (
     <Link href="/product/[permalink]" as={`/product/${permalink}`}>
-      <a className="mb-5 d-block font-color-black cursor-pointer">
+      <a className="mb-5 d-block  font-color-black cursor-pointer">
         <div
-          className="mb-3"
+          className="product-card product-card__image mb-3"
           style={{
             paddingBottom: '125%',
             background: `url("${image}") center center/cover`
