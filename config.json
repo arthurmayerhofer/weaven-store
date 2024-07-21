@@ -1,0 +1,16 @@
+{
+	"telemetryDisabled": false,
+	"cliId": "ab70a37f-18e8-4664-bbd8-ee583c8b976d",
+	"userId": "66381a08773430454c07e361",
+	"users": {
+		"66381a08773430454c07e361": {
+			"id": "66381a08773430454c07e361",
+			"name": null,
+			"email": "mayerhofer.tec@gmail.com",
+			"auth": {
+				"token": "nfc_tykQgfmVyyJcGnzV3YZwmgVjUpLLT2sh13a0",
+				"github": {}
+			}
+		}
+	}
+}
