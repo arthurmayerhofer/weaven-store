@@ -7,4 +7,4 @@
   package = "netlify-plugin-onboarding"
 
 [environment]
-  NEXT_PUBLIC_CHEC_PUBLIC_KEY = pk_57155f5e3bd1202a080889072c75a9ecce53d3ad82793
+  NEXT_PUBLIC_CHEC_PUBLIC_KEY = "pk_57155f5e3bd1202a080889072c75a9ecce53d3ad82793"
