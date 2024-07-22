@@ -2,6 +2,7 @@
 // Event handlers like onClick can't be added to this file
 
 import React from 'react';
+// eslint-disable-next-line @next/next/no-document-import-in-page
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 class MyDocument extends Document {
