@@ -19,10 +19,10 @@ const params = {
   }
 };
 const images = [
-  // '/images/hero/jaleco-07.jpg',
-  '/images/hero/b00.mp4',
-  // '/images/hero/jaleco-03.jpg',
-  // '/images/hero/jaleco-04.jpg',
+  // '/images/hero/b00.mp4',
+  '/images/hero/jaleco-07.jpg',
+  '/images/hero/jaleco-03.jpg',
+  '/images/hero/jaleco-04.jpg',
 ];
 
 const videos = [
